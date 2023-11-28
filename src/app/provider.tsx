@@ -6,5 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Provider({ children }: { children: React.ReactNode }) {
   const { theme, setTheme } = useTheme();
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider attribute="class" defaultTheme="light">
+      {children}
+    </ThemeProvider>
+  );
 }

@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <main className="flex justify-center items-center min-h-screen ">
+          <main className="flex max-w-[1500px] m-auto justify-center items-center min-h-screen ">
             {children}
           </main>
         </Provider>

@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <section className=" w-full ">
       <Header />
-      <div>{children}</div>
+      <div className=" mt-20 ">{children}</div>
     </section>
   );
 }
