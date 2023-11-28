@@ -13,7 +13,9 @@ export default function Home() {
         without struggling.
       </h1>
       <SearchBar />
-      <div className="w-full flex gap-4 justify-center items-center flex-wrap">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <JobCard />
         <JobCard />
         <JobCard />
         <JobCard />
