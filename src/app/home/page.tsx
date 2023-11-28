@@ -13,7 +13,7 @@ export default function Home() {
         without struggling.
       </h1>
       <SearchBar />
-      <div className="w-full flex gap-3 justify-center items-center flex-wrap">
+      <div className="w-full flex gap-4 justify-center items-center flex-wrap">
         <JobCard />
         <JobCard />
         <JobCard />

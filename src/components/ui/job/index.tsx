@@ -4,7 +4,7 @@ import { Button } from "../global/button";
 
 const JobCard = () => {
   return (
-    <div className=" flex border-[1px] dark:bg-black border-black/20 flex-col box-border w-[20em]  gap-3 max-h-[13rem] p-4 justify-between rounded-xl dark:bg-my_gray bg-white ">
+    <div className=" flex border-[1px] dark:bg-black border-black/20 flex-col box-border w-[23em]  gap-3 max-h-[13rem] p-4 justify-between rounded-xl dark:bg-my_gray bg-white ">
       <div className="flex gap-2 justify-start items-center">
         <Image
           src={"/assets/JobberYou Logo.png"}

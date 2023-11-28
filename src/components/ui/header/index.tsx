@@ -10,7 +10,7 @@ const Header = () => {
   const [isSigned, setIsSigned] = useState<boolean>(false);
   const router = useRouter();
   return (
-    <header className="flex bg-white dark:bg-black items-center justify-between w-full max-w-[1500px]  shadow-[0_3px_10px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_10px_rgb(255,255,255,0.2)]   h-[10vh] min-h-24 fixed top-0 p-3 ">
+    <header className="flex bg-white dark:bg-black items-center justify-between w-full max-w-[1500px]  shadow-[0_3px_10px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_10px_rgb(255,255,255,0.2)] z-50   h-[10vh] min-h-24 fixed top-0 p-3 ">
       {/* <div className="flex w-[40%] justify-between items-center"> */}
       <h1 className=" font-extrabold text-2xl ">JobberYou</h1>
       {/* </div> */}
