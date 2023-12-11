@@ -38,7 +38,7 @@ export default function Home() {
           }}
         />
       </div>
-      {page == "login" ? <Login /> : <Signup />}
+      {page == "login" ? <Login redirect="/home" /> : <Signup />}
     </main>
   );
 }

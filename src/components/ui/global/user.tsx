@@ -2,19 +2,27 @@
 import Image from "next/image";
 import { Button } from "./button";
 import { useState } from "react";
+import { Dropdown } from "antd";
 
 export interface UserInterface {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
+  name: string;
 }
 
-const User = ({ src, alt, width, height }: UserInterface) => {
+const items = [
+  {
+    label: "Logout",
+    key: "0",
+  },
+];
+
+const User = ({ name }: UserInterface) => {
   return (
-    <div className=" rounded-full w-10 h-10 overflow-hidden">
-      <Image src={src} alt={alt} width={width} height={height} />
-    </div>
+    <Dropdown menu={{ items }} trigger={["click"]}>
+      <div className="bg-primary cursor-pointer text-white flex items-center justify-center font-bold rounded-full w-10 h-10 overflow-hidden">
+        {/* <Image src={src} alt={alt} width={width} height={height} /> */}
+        {name[0]}
+      </div>
+    </Dropdown>
   );
 };
 

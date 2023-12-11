@@ -2,6 +2,7 @@
 import { ConfigProvider } from "antd";
 import { ThemeProvider, useTheme } from "next-themes";
 import { Inter } from "next/font/google";
+import { RecoilRoot } from "recoil";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,13 +12,13 @@ export default function Provider({ children }: { children: React.ReactNode }) {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "rgba(23, 98, 0, 0.76)",
+          colorPrimary: "rgb(3, 0, 94)",
           fontFamily: inter.style.fontFamily,
         },
       }}
     >
       <ThemeProvider attribute="class" defaultTheme="light">
-        {children}
+        <RecoilRoot>{children}</RecoilRoot>
       </ThemeProvider>
     </ConfigProvider>
   );

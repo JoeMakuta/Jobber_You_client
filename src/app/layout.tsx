@@ -20,9 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <main className="flex max-w-[1500px] m-auto justify-center items-center min-h-screen ">
+          <main className="flex max-w-[1500px] bg-[#f0f0f0] dark:bg-black m-auto justify-center items-center min-h-screen ">
             {children}
-          </main>
+          </main>{" "}
+          <div className=" m-auto w-fit p-5 ">@Copywrite JobberYou</div>
         </Provider>
       </body>
     </html>

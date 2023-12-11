@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --primary: rgba(23, 98, 0, 0.76);
-    --secondary: rgba(23, 98, 0, 0.722);
+    --primary: rgb(3, 0, 94);
+    --secondary: rgba(74, 79, 114, 0.722);
   }
 }

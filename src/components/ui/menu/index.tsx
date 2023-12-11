@@ -30,7 +30,7 @@ const items = [
 const Menu: React.FC = () => {
   const [menuSelected, setMenuSelected] = useState<number>(0);
   return (
-    <div className=" flex gap-6 ">
+    <div className="hidden sm:flex  gap-6 ">
       {/* <Tabs defaultActiveKey="1" items={items} onChange={onChange} /> */}
       {items.map((elt, index) => {
         return (

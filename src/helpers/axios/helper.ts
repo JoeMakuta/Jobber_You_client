@@ -2,6 +2,7 @@ import axios, { AxiosResponse } from "axios";
 
 export class ApiClient {
   static baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  static externalUrl = process.env.EXTERNAL_API_URL;
 
   static get = async ({
     url = "",
@@ -57,6 +58,20 @@ export class ApiClient {
       url,
       data,
       method: "PUT",
+      headers: {
+        Authorization: "Bearer " + token,
+      },
+    });
+  };
+
+  static getExternal = async ({
+    url = "",
+    token = "",
+  } = {}): Promise<AxiosResponse> => {
+    return await axios({
+      baseURL: this.externalUrl,
+      url,
+      method: "GET",
       headers: {
         Authorization: "Bearer " + token,
       },
